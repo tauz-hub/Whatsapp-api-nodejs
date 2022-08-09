@@ -1,10 +1,10 @@
-const json = require('./bigdata.json');
-const fs = require('fs');
+import json from './bigdata.json';
+import fs from 'fs';
 const arrayData = json.div;
 
 const newJson: Array<any> = [];
 
-arrayData.forEach((element) => {
+arrayData.forEach((element: any) => {
   const obj = element.div[0].div[0];
   const coord = element.$;
 
@@ -22,6 +22,6 @@ arrayData.forEach((element) => {
   }
 });
 
-fs.writeFile('./unidades.json', JSON.stringify(newJson), (err) =>
+fs.writeFile('./database/unidades.json', JSON.stringify(newJson), (err: any) =>
   console.log(err)
 );

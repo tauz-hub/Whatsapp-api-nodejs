@@ -21,6 +21,6 @@ export async function getCoordFromUser(cepUser: string): Promise<location> {
     console.log(info);
     return info;
   } catch (err) {
-    return err;
+    return info;
   }
 }

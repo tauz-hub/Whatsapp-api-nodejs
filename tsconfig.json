@@ -8,11 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
   },
-  "include": ["./index.ts"],
-  "exclude": [""],
+  "include": ["src"],
   "lib": [
     "ES6",
-    
   ],
-  
 }

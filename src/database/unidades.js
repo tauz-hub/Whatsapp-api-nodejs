@@ -1,4 +1,4 @@
-[
+export default [
   {
     "coord": {
       "class": "marker",

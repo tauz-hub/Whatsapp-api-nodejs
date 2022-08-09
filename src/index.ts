@@ -3,7 +3,7 @@ import { getCoordFromUser } from './buscacep';
 
 import qrcode from 'qrcode-terminal';
 
-import json from './unidades.json';
+import json from './database/unidades.js';
 
 const client: Client = new Client({
   authStrategy: new LocalAuth({
@@ -47,12 +47,14 @@ client.on('ready', () => {
 client.on('message', async (message) => {
   const content = message.body;
 
-  const regex = /[0-9]{5}-[0-9]{3}/g;
+  const regex = /[0-9]{5}-?[0-9]{3}/g;
 
   if (regex.test(content)) {
     const cepregex = content.match(regex)[0];
 
     const user: location = await getCoordFromUser(cepregex);
+
+    if (!user) return;
 
     const latUser = user.lat;
     const lngUser = user.lon;
@@ -82,14 +84,11 @@ client.on('message', async (message) => {
       }
     });
 
-    console.log(unidadeMaisProxima);
-
     const str = `Unidade mais próxima: ${JSON.stringify(
       unidadeMaisProxima.nomeUnidade
-    )}
-    Endereço: ${unidadeMaisProxima.endereco}
-    Telefone: ${unidadeMaisProxima.telefone}
-    E-mail: ${unidadeMaisProxima.email}`;
+    )}\nEndereço: ${unidadeMaisProxima.endereco}\nTelefone: ${
+      unidadeMaisProxima.telefone
+    }\nE-mail: ${unidadeMaisProxima.email}`;
 
     message.reply(str);
   }

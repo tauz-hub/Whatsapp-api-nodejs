@@ -4,25 +4,26 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node-dev --transpile-only index.ts",
-    "start2": "ts-node-dev --transpile-only buscacep.ts",
-    "formmat": "ts-node-dev --transpile-only ./arq/formatadorJson.ts"
+    "dev": "ts-node-dev --transpile-only index.ts",
+    "test": "ts-node-dev --transpile-only ./src/buscacep.ts",
+    "formmat": "ts-node-dev --transpile-only ./arq/formatadorJson.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "commit": "gitmoji --commit"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "coordenadas-do-cep": "^1.2.0",
     "distance-matrix-api": "^1.0.0",
-    "gitmoji-cli": "^5.0.3",
     "google-distance-matrix": "^1.1.1",
     "qrcode-terminal": "^0.12.0",
     "sulla": "^2.4.0",
-    "ts-node-dev": "^2.0.0",
-    "tsc": "^2.0.4",
-    "tsc-node": "^0.0.3",
-    "typescript": "^4.7.4",
     "whatsapp-web.js": "^1.17.1"
   },
   "devDependencies": {
-    "@types/qrcode-terminal": "^0.12.0"
+    "@types/qrcode-terminal": "^0.12.0",
+    "gitmoji-cli": "^5.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
   }
 }
