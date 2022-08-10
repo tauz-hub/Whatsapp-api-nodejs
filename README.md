@@ -11,4 +11,4 @@
 ### npm start ou yarn start
 
 
-###Logue com o whatsapp via QR code no navegador que irá abrir
+### Logue com o whatsapp via QR code no navegador que irá abrir
