@@ -71,8 +71,6 @@ client.on('message', async (message) => {
 
       const distancia = Math.sqrt(Math.pow(modLat, 2) + Math.pow(modLng, 2));
 
-      console.log(distancia);
-
       if (distanciaMaisCurta) {
         if (distancia < distanciaMaisCurta) {
           unidadeMaisProxima = obj;
