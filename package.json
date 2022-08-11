@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only index.ts",
-    "test": "ts-node-dev --transpile-only ./src/buscacep.ts",
+    "dev": "ts-node-dev --transpile-only ./src/index.ts",
+    "test": "ts-node-dev --transpile-only ./src/index2.ts",
     "formmat": "ts-node-dev --transpile-only ./arq/formatadorJson.ts",
     "build": "tsc",
     "start": "node dist/index.js",
@@ -17,8 +17,7 @@
     "distance-matrix-api": "^1.0.0",
     "google-distance-matrix": "^1.1.1",
     "qrcode-terminal": "^0.12.0",
-    "sulla": "^2.4.0",
-    "whatsapp-web.js": "^1.17.1"
+    "venom-bot": "^4.2.7"
   },
   "devDependencies": {
     "@types/qrcode-terminal": "^0.12.0",

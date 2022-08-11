@@ -2,13 +2,9 @@
 
 ### Para iniciar o script digite no terminal:
 
-### npm i ou yarn i
+## npm i ou yarn i
+## npm build ou yarn build
+## npm start ou yarn start
+## Logue com o whatsapp via QR code no navegador que irá abrir
 
-
-### npm build ou yarn build
-
-
-### npm start ou yarn start
-
-
-### Logue com o whatsapp via QR code no navegador que irá abrir
+### API - https://npm.io/package/venom-bot
