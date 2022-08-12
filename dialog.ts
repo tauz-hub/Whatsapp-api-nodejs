@@ -116,7 +116,3 @@ function start(client) {
 server.listen(port, function () {
   console.log('App running on *: ' + port);
 });
-
-// ESTRATÉGIA ZAP DAS GALÁXIAS
-// ZDG © 2020
-// www.zapdasgalaxias.com.br
