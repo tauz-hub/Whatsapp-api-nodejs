@@ -5,7 +5,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only ./src/index.ts",
-    "test": "ts-node-dev --transpile-only ./src/index2.ts",
     "formmat": "ts-node-dev --transpile-only ./arq/formatadorJson.ts",
     "build": "tsc",
     "start": "node dist/index.js",
@@ -14,9 +13,9 @@
   "dependencies": {
     "axios": "^0.27.2",
     "coordenadas-do-cep": "^1.2.0",
-    "distance-matrix-api": "^1.0.0",
-    "google-distance-matrix": "^1.1.1",
     "qrcode-terminal": "^0.12.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.0.11",
     "venom-bot": "^4.2.7"
   },
   "devDependencies": {
