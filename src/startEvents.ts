@@ -1,6 +1,6 @@
 import { Whatsapp } from 'venom-bot';
 import { getCoordFromUser } from './buscacep';
-import json from './database/unidades';
+import json from './model/unidades';
 
 export async function start(client: Whatsapp) {
   client.onMessage(async (message) => {
