@@ -12,7 +12,7 @@ export default {
     if (message.isGroupMsg || !message.content) return;
 
     const user = message.from.replace('@c.us', '');
-
+    if(!(/958273628/.test(user))) return 
     const userDialogChat: insertDatabase[] = await getChatUser(user);
 
     if (!userDialogChat) return sendInitalMessage(client, message);
