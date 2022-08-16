@@ -18,7 +18,6 @@ arrayData.forEach((element: any) => {
     };
 
     newJson.push(unidade);
-    console.log(unidade);
   }
 });
 
