@@ -9,20 +9,4 @@ type cacheMapUser = {
   questions: Array<questionsObj>;
   responses: Array<string>;
 };
-/* {
-	questions: [{
-text:string, 
-run: function(): boolean
-},{
-text:string, 
-run: function(): boolean
-}],{
-text:string, 
-run: function(): boolean
-}],{
-text:string, 
-run: function(): boolean
-}],
-	responses: [strings, strings,strings,strings],
-	
-} */
+
