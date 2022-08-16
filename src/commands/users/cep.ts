@@ -1,5 +1,5 @@
 import { Message, Whatsapp } from 'venom-bot';
-import { getCoordFromUser } from '../../buscacep';
+import { getCoordFromUser } from '../../utils/address/buscacep';
 import json from '../../model/unidades';
 import { WhatsappBot } from '../../structures/Client';
 export default {

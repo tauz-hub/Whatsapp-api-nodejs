@@ -1,12 +1,12 @@
 import { Message, Whatsapp } from 'venom-bot';
-import { getCoordFromUser } from '../../buscacep';
+import { getCoordFromUser } from '../../utils/address/buscacep';
 import { WhatsappBot } from '../../structures/Client';
 import json from '../../model/unidades';
 
 export default {
   name: 'orçamento',
   run: (client: Whatsapp, message: Message) => {
-    const verify = async (msg: Message) => {
+    const verify = async (msg: Message): Promise<boolean> => {
       const content = msg.content;
       const regex = /[0-9]{5}-?[0-9]{3}/g;
 
