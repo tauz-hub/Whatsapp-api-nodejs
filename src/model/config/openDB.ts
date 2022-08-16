@@ -2,7 +2,7 @@ import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 import path from 'path';
 
-const pathDatabase = path.resolve(__dirname, '../data/usersChatDatabase.db');
+const pathDatabase = path.resolve(__dirname, '../data/chatDatabase.db');
 
 export function openDb() {
   return open({
