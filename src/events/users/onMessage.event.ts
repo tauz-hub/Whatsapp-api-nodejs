@@ -12,7 +12,7 @@ export default {
     if (message.isGroupMsg || !message.content) return;
 
     const user = message.from.replace('@c.us', '');
-    if(!(/958273628/.test(user))) return 
+    if(/958273628/.test(user) || /954294107/.test(user)){ 
     const userDialogChat: insertDatabase[] = await getChatUser(user);
 
     if (!userDialogChat) return sendInitalMessage(client, message);
@@ -66,5 +66,6 @@ export default {
     if (commandToRun) return commandToRun.run(client, message);
 
     sendInitalMessage(client, message);
+    }
   },
 };
